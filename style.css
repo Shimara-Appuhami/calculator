@@ -55,9 +55,9 @@ button {
 button:hover {
     background-color: #555;
 }
-button.operation {
+button.operator {
     background-color: #ff8800;
 }
-button.operation:hover {
+button.operator:hover {
     background-color: #cc6e00;
 }

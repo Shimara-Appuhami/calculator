@@ -5,47 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-   
 </head>
 <body>
     <div class="calculator">
-    <h1>Calculator</h1>
-    <h4 id="display"></h4>
-   
-
-    <div class="button-row">
-        <button class="operation" onclick="clearAll()">AC</button>
-        <button class="operation" onclick="eraseLast()">E</button>
-        <button class="operation" onclick="setOperation('+')">+</button>
-        <button class="operation" onclick="setOperation('-')">-</button>     
+        <h1>Calculator</h1>
+        <input id="display" readonly>
+        <div class="button-row">
+            <button class="operator" onclick="clearAll()">AC</button>
+            <button class="operator" onclick="feraser()">E</button>
+            <button class="operator" onclick="fn('+')">+</button>
+            <button class="operator" onclick="fn('-')">-</button>     
+        </div>
+        <div class="button-row">
+            <button class="number" onclick="fn(7)">7</button>
+            <button class="number" onclick="fn(8)">8</button>
+            <button class="number" onclick="fn(9)">9</button>
+            <button class="operator" onclick="fn('*')">x</button>
+        </div>
+        <div class="button-row">
+            <button class="number" onclick="fn(4)">4</button>
+            <button class="number" onclick="fn(5)">5</button>
+            <button class="number" onclick="fn(6)">6</button>
+            <button class="operator" onclick="fn('/')">/</button>
+        </div>
+        <div class="button-row">
+            <button class="number" onclick="fn(1)">1</button>
+            <button class="number" onclick="fn(2)">2</button>
+            <button class="number" onclick="fn(3)">3</button>
+            <button class="operator" onclick="eq()">=</button>
+        </div>
+        <div class="button-row">
+            <button class="number" onclick="fn(0)">0</button>       
+        </div>
     </div>
-
-    <div class="button-row">
-        <button onclick="inputNumber(7)">7</button>
-        <button onclick="inputNumber(8)">8</button>
-        <button onclick="inputNumber(9)">9</button>
-        <button class="operation" onclick="setOperation('*')">x</button>
-    </div>
-
-    <div class="button-row">
-        <button onclick="inputNumber(4)">4</button>
-        <button onclick="inputNumber(5)">5</button>
-        <button onclick="inputNumber(6)">6</button>
-        <button class="operation" onclick="setOperation('/')">/</button>
-    </div>
-
-    <div class="button-row">
-        <button onclick="inputNumber(1)">1</button>
-        <button onclick="inputNumber(2)">2</button>
-        <button onclick="inputNumber(3)">3</button>
-        <button class="operation" onclick="calculate()">=</button>
-    </div>
-
-    <div class="button-row">
-        <button onclick="inputNumber(0)">0</button>       
-    </div>
-</div>
-
     <script src="script.js"></script>
 </body>
 </html>
